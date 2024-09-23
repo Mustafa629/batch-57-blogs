@@ -1,0 +1,14 @@
+import {defineField, defineType} from 'sanity'
+
+export const eventType = defineType({
+  name: 'pet',
+  title: 'Pet',
+  type: 'document',
+  fields: [
+    defineField({
+      name: 'name',
+      type: 'string',
+      title: 'Name',
+    }),
+  ],
+})
